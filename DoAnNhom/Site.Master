@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DoAnNhom.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Assets/style/index.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/style/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <div class="header-logo">
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Assets/images/logo.png"/>
+                </div>
+                <div class="header-search">
+                    <asp:TextBox ID="TextBox1" runat="server" class="header-search__input" Placeholder="Bạn đang tìm gì"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" Text="Tìm kiếm" class="header-search__btn"/>
+                </div>
+                <div class="header-menu">
+                    <div class="header-menu__home">
+                        <asp:HyperLink ID="HyperLink1" runat="server">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Assets/images/icon-home.png"/>
+                            <span>Trang chủ</span>
+                        </asp:HyperLink>
+                    </div>
+                    <div class="header-menu__user">
+                        
+                        <asp:HyperLink ID="HyperLink2" runat="server">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Assets/images/icon-user.png"/>
+                            <span>Tài khoản</span>
+                        </asp:HyperLink>
+                    </div>
+                    <div class="header-menu__cart">
+                        <asp:HyperLink ID="HyperLink3" runat="server">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Assets/images/icon-cart.png"/>
+                        </asp:HyperLink>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <div class="footer row">
+                <div class="col-3">
+                    <h3 class="footer-title">Hỗ trợ khách hàng</h3>
+                    <ul>
+                        <li class="footer-text">Hotline: 1900-6035
+(1000 đ/phút, 8-21h kể cả T7, CN)</li>
+                        <li class="footer-text">Các câu hỏi thường gặp</li>
+                        <li class="footer-text">Gửi yêu cầu hỗ trợ</li>
+                        <li class="footer-text">Hướng dẫn đặt hàng</li>
+                        <li class="footer-text">Phương thức vận chuyển</li>
+                        <li class="footer-text">Chính sách đổi trả</li>
+                        <li class="footer-text">Hướng dẫn trả góp</li>
+                        <li class="footer-text">Chính sách hàng nhập khẩu</li>
+                        <li class="footer-text">Hỗ trợ khách hàng hotro@tiki.vn</li>
+                        <li class="footer-text">Báo lỗi bảo mật security@tiki.vn</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                     <h3 class="footer-title">Về Tiki</h3>
+                    <ul>
+                        <li class="footer-text">Giới thiệu Tiki</li>
+                        <li class="footer-text">Tiki Blog</li>
+                        <li class="footer-text">Tuyển dụng</li>
+                        <li class="footer-text">Chính sách bảo mật thanh toán</li>
+                        <li class="footer-text">Chính sách bảo mật thông tin cá nhân</li>
+                        <li class="footer-text">Chính sách giải quyết khiếu nại</li>
+                        <li class="footer-text">Điều khoản sử dụngp</li>
+                        <li class="footer-text">Giới thiệu Tiki Xu</li>
+                        <li class="footer-text">Tiếp thị liên kết cùng Tiki</li>
+                        <li class="footer-text">Bán hàng doanh nghiệp</li>
+                        <li class="footer-text">Điều kiện vận chuyển</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                     <h3 class="footer-title">Hợp tác và liên kết</h3>
+                    <ul>
+                        <li class="footer-text">Quy chế hoạt động Sàn GDTMDT</li>
+                        <li class="footer-text">Bán hàng cùng Tiki</li>
+                    </ul>
+
+                </div>
+                <div class="col-2">
+                    <h3 class="footer-title">Dịch vụ giao hàng</h3>
+                    <asp:Image ID="Image4" runat="server" ImageUrl="~/Assets/images/tikinow.png" class="tikinow-img"/>
+                </div>
+                <div class="col-3">
+                    <h3>Tải ứng dụng trên điện thoại</h3>
+                    <div class="row">
+                        <div class="app-list">
+                             <div>
+                            <asp:Image ID="Image5" runat="server" ImageUrl="~/Assets/images/qrcode.png" class="qr-img"/>
+                        </div>
+                        <div class="app-list__img">
+                            <asp:Image ID="Image6" runat="server" imageUrl="~/Assets/images/ggplay.png" class="ggplay-img"/>
+                            <asp:Image ID="Image7" runat="server" imageUrl="~/Assets/images/appstore.png" class="appstore-img"/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
